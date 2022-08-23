@@ -1,6 +1,6 @@
 {
     "name": "formfieldsui",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "description": "",
     "main": "./lib/cjs/index.js",
     "module": "./lib/esm/index.js",
@@ -15,7 +15,7 @@
         "url": "git+https://github.com/uplSukantaM/npm-module.git"
     },
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/uplSukantaM/npm-module/issues"
     },

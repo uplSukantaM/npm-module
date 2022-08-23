@@ -1,7 +1,8 @@
 import React from 'react'
 import EmailField from './components/emailFieldInput/Index';
 import PhoneNoField from './components/phoneNoFieldInput/Index';
-import TextField from './components/textFieldinput/Index'
+import TextField from './components/textFieldinput/Index';
+import TextAreaField from './components/textareaFieldInput/Index';
 
 const EmailFieldInput = (props: any): JSX.Element => {
 
@@ -16,6 +17,12 @@ const TextFieldInput = (props: any) => {
 	)
 }
 
+const TextAreaFieldInput = (props: any) => {
+	return (
+		<TextAreaField {...props} />
+	)
+}
+
 const PhoneNoFieldInput = (props: any) => {
 	return (
 			<PhoneNoField {...props} />
@@ -23,4 +30,4 @@ const PhoneNoFieldInput = (props: any) => {
 }
 
 
-export { TextFieldInput, EmailFieldInput, PhoneNoFieldInput }
+export { TextFieldInput, EmailFieldInput, TextAreaFieldInput, PhoneNoFieldInput }
