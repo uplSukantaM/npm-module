@@ -1,51 +1,19 @@
 import React from 'react'
+import { filledTheme, outlinedTheme, standardTheme } from '../themes/Index'
 
 const TextField = (props: any) => {
 
-  const outlinedTheme = {
-    minHeight: '50px',
-    minWidth: '200px',
+  const errorTheme = {
     border: props.error ? '1px solid #ff0505' : '1px solid #000000',
-    outline: 'none'
-  }
-
-  const standardTheme = {
-    minHeight: '50px',
-    minWidth: '200px',
-    boxSizing: 'border-box',
-    borderBottom: props.error ? '1px solid #ff0505' : '1px solid #000000',
-    borderTop: 'none',
-    borderLeft: 'none',
-    borderRight: 'none',
-    outline: 'none',
-    background: 'transparent',
-    WebkitTransition: '0.5s',
-    transition: '0.5s'
-  }
-
-  const filledTheme = {
-    minHeight: '50px',
-    minWidth: '200px',
-    boxSizing: 'border-box',
-    borderBottom: props.error ? '1px solid #ff0505' : '1px solid #000000',
-    borderTop: 'none',
-    borderLeft: 'none',
-    borderRight: 'none',
-    outline: 'none',
-    background: '#d7d7d74f',
-    WebkitTransition: '0.5s',
-    transition: '0.5s',
-    borderTopLeftRadius: '4px',
-    borderTopRightRadius: '4px'
   }
 
   return (
     <>
       <p className={props.lableClass}>{props.label}</p>
       <input
-        style={props.variant === 'standard' ? standardTheme
-          : props.variant === 'filled' ? filledTheme
-            : outlinedTheme}
+        style={props.variant === 'standard' ? { ...standardTheme, ...errorTheme }
+          : props.variant === 'filled' ? { ...filledTheme, ...errorTheme }
+            : { ...outlinedTheme, ...errorTheme }}s
         id={props.id}
         value={props.value}
         name={props.name}
