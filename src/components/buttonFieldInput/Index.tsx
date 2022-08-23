@@ -16,16 +16,15 @@ const ButtonField = (props: any) => {
             <button
                 style={TextAreaTheme}
                 id={props.id}
-                value={props.value}
                 name={props.name}
                 className={props.rootClass}
                 type={props.type ?? 'button'}
                 placeholder={props.placeholder}
-                onChange={props.onChange}
+                onClick={props.onClick}
                 disabled={props.disabled}
                 {...props}
             >
-                click me
+                {props.buttonText ?? 'Click'}
             </button>
             <p className={props.helperTextClass} style={{ color: 'red' }}>{props.helperText}</p>
         </div>
