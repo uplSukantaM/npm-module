@@ -12,7 +12,7 @@ $ yarn add formfieldsui
 ####  Import and example:-
 
 ```JavaScript
-import { EmailFieldInput, TextFieldInput, TextAreaFieldInput } from "formfieldsui";
+import { EmailFieldInput, TextFieldInput, TextAreaFieldInput, PasswordFieldInput} from "formfieldsui";
 
 <EmailFieldInput
 label='EmailLabel'
@@ -54,7 +54,7 @@ onChange={(e) =>  e.target.value}
 |rows| number | |The rows attribute specifies the visible height of a text area, in lines. `(it's only aplicable for TextAreaFieldInput)`|
 |cols|number||The cols attribute specifies the visible width of a text area. `(it's only aplicable for TextAreaFieldInput)`|
 | disabled  | bool  | false  |If `true`, the input field is disabled  |
-|showPassword|bool||`It's only applicable for passwordFieldInput`, this state change show and hide icon & paswword filed type to text>password and vice versa|
+|showPassword|bool||`It's only applicable for PasswordFieldInput`, this state change show and hide icon & paswword filed type to text>password and vice versa|
 |showImg|string||It is used to pass show password eye icon image path|
 |hideImg|string||It is used to pass hide password eye icon image path|
 |changeIconFunc|func||handle showPassword state
