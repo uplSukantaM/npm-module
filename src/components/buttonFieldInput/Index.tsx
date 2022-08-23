@@ -18,13 +18,21 @@ const ButtonField = (props: any) => {
         background: 'none',
         cursor: 'pointer'
     }
+    const contained = {
+        border: 'none',
+        background: '#4CAF50',
+        color: ' white',
+        padding: '10px 10px 10px 10px',
+        textalign: 'center',
+        cursor: 'pointer'
+    }
+
 
     return (
         <div>
             <button
                 style={
-                    // props.variant === 'standard' ? standardTheme: props.variant === 'filled' ? filledTheme:
-                    props.variant === 'outlinedTheme' ? outlined : defaultTheme}
+                    props.variant === 'contained' ? contained : props.variant === 'outlinedTheme' ? outlined : defaultTheme}
                 id={props.id}
                 className={props.rootClass}
                 name={props.name}
