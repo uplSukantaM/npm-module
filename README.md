@@ -83,14 +83,11 @@ helperTextClass = for notification "error message"
 
 #### variant :-
 
-|     | Name                                   |     |
-| --- | -------------------------------------- | --- |
-|     | outlined `(Default)`                   |     |
-|     | standard                               |     |
-|     | filled                                 |     |
-|     | contained `(buttonfield)`              |     |
-|     | outlined `(buttonfield)`               |     |
-|     | defaultTheme `(buttonfield) (default)` |     |
+|     | Name                 |     |
+| --- | -------------------- | --- |
+|     | outlined `(Default)` |     |
+|     | standard             |     |
+|     | filled               |     |
 
 ```JavaScript
 Ex:-

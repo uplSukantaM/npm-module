@@ -5,24 +5,24 @@
 import React from "react";
 
 const ButtonField = (props: any) => {
-    const outlined = {
+    const outlinedTheme = {
         border: '1px solid black',
         color: ' black',
         padding: '10px 10px 10px 10px',
         textalign: 'center',
         cursor: 'pointer'
     }
-    const defaultTheme = {
-        border: 'none',
-        background: 'none',
-        cursor: 'pointer'
-    }
-    const contained = {
+    const filledTheme = {
         border: 'none',
         background: '#4CAF50',
         color: ' white',
         padding: '10px 10px 10px 10px',
         textalign: 'center',
+        cursor: 'pointer'
+    }
+    const standardTheme = {
+        border: 'none',
+        background: 'none',
         cursor: 'pointer'
     }
 
@@ -31,7 +31,7 @@ const ButtonField = (props: any) => {
         <div>
             <button
                 style={
-                    props.variant === 'contained' ? contained : props.variant === 'outlinedTheme' ? outlined : defaultTheme}
+                    props.variant === 'filled' ? filledTheme : props.variant === 'outlined' ? outlinedTheme : standardTheme}
                 id={props.id}
                 className={props.rootClass}
                 name={props.name}
