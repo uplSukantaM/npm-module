@@ -1,6 +1,5 @@
 /**
  * @uplShreya
- * This component taken from Flo
  */
 
 import React from "react";
@@ -16,21 +15,21 @@ const TextAreaField = (props: any) => {
     return (
         <div>
             <label className={`${props.lableClass}`}>{props.label}</label>
-                <textarea
-                    style={TextAreaTheme}
-                    id={props.id}
-                    value={props.value}
-                    name={props.name}
-                    className={props.rootClass}
-                    type={props.type ?? 'text'}
-                    placeholder={props.placeholder}
-                    onChange={props.onChange}
-                    disabled={props.disabled}
-                    multiline
-                    rows={props.rows}
-                    cols={props.cols}
-                    {...props}
-                />
+            <textarea
+                style={TextAreaTheme}
+                id={props.id}
+                value={props.value}
+                name={props.name}
+                className={props.rootClass}
+                type={props.type ?? 'text'}
+                placeholder={props.placeholder}
+                onChange={props.onChange}
+                disabled={props.disabled}
+                multiline={props.multiline}
+                rows={props.rows}
+                cols={props.cols}
+                {...props}
+            />
             <p className={props.helperTextClass} style={{ color: 'red' }}>{props.helperText}</p>
         </div>
     );

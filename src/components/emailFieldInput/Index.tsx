@@ -1,6 +1,5 @@
 /**
  * @uplShreya
- * This component taken from Pictplay
  */
 
 import React from "react";
