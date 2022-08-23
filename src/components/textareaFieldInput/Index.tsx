@@ -1,6 +1,5 @@
 /**
  * @uplShreya
- * This component taken from Flo
  */
 
 import React from "react";
