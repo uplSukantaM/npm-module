@@ -44,7 +44,6 @@ onChange={(e) =>  e.target.value}
 />
 
 <ButtonFieldInput
-placeholder='placeholder'
 onclick="alert('Hello world!')"
 buttonText="Click"
 />
