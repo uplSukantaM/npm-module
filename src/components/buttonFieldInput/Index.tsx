@@ -19,7 +19,7 @@ const ButtonField = (props: any) => {
                 disabled={props.disabled}
                 {...props}
             >
-                {props.buttonText ?? 'Click'}
+                {props.buttonText ?? 'Click Me'}
             </button>
             <p className={props.helperTextClass} style={{ color: 'red' }}>{props.helperText}</p>
         </div>
