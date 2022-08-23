@@ -2,6 +2,7 @@ import React from 'react'
 import EmailField from './components/emailFieldInput/Index';
 import TextField from './components/textfieldinput/Index';
 import TextAreaField from './components/textareaFieldInput/Index';
+import PasswordField from './components/passwordfieldinput'
 
 const EmailFieldInput = (props: any): JSX.Element => {
 
@@ -17,6 +18,13 @@ const TextFieldInput = (props: any) => {
 		</>
 	)
 }
+const PasswordFieldInput = (props: any) => {
+	return (
+
+		<PasswordField {...props} />
+
+	)
+}
 
 const TextAreaFieldInput = (props: any) => {
 	return (
@@ -24,4 +32,4 @@ const TextAreaFieldInput = (props: any) => {
 	)
 }
 
-export { TextFieldInput, EmailFieldInput, TextAreaFieldInput }
+export { TextFieldInput, EmailFieldInput, TextAreaFieldInput, PasswordFieldInput }
