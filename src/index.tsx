@@ -20,11 +20,11 @@ const TextFieldInput = (props: any) => {
 }
 const PasswordFieldInput = (props: any) => {
 	return (
-	
+
 		<PasswordField {...props} />
-	
+
 	)
-} 
+}
 
 const TextAreaFieldInput = (props: any) => {
 	return (
@@ -32,4 +32,4 @@ const TextAreaFieldInput = (props: any) => {
 	)
 }
 
-export { TextFieldInput, EmailFieldInput, TextAreaFieldInput,PasswordFieldInput }
+export { TextFieldInput, EmailFieldInput, TextAreaFieldInput, PasswordFieldInput }

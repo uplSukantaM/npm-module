@@ -31,12 +31,18 @@ label='textAreaLabel'
 placeholder='placeholder'
 onChange={(e) =>  e.target.value}
 />
+
+<PasswordFieldInput
+label='textLabel'
+placeholder='placeholder'
+onChange={(e) =>  e.target.value}
+/>
 ```
 
 ####  Props:-
 | Name  | Type | Default | Description
 | ------------- | ------------- | ------------- | ------------- |
-| type | string | text-TextFieldInput, email-EmailFieldInput |It's customizable and it's only applicable for TextFieldInput|
+| type | string | text-TextFieldInput, email-EmailFieldInput, password-PasswordFieldInput|It's customizable and it's only applicable for TextFieldInput|
 | Label  | string  |  | The label content.  |
 | helperText  | string  |   |   The helper text content for message's.  |
 | error  | bool  | false  | If `true`, the label is displayed in an error state.  |
@@ -48,6 +54,10 @@ onChange={(e) =>  e.target.value}
 |rows| number | |The rows attribute specifies the visible height of a text area, in lines. `(it's only aplicable for TextAreaFieldInput)`|
 |cols|number||The cols attribute specifies the visible width of a text area. `(it's only aplicable for TextAreaFieldInput)`|
 | disabled  | bool  | false  |If `true`, the input field is disabled  |
+|showPassword|bool||`It's only applicable for passwordFieldInput`, this state change show and hide icon & paswword filed type to text>password and vice versa|
+|showImg|string||It is used to pass show password eye icon image path|
+|hideImg|string||It is used to pass hide password eye icon image path|
+|changeIconFunc|func||handle showPassword state
 
 ####  ClassName for Css:-
 ```
@@ -66,4 +76,5 @@ helperTextClass = for notification "error message"
 Ex:-
 <TextFieldInput  variant='filled' />
 <EmailFieldInput  variant='filled' />
+<PasswordFieldInput  variant='filled' />
 ```
