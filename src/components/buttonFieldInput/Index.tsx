@@ -10,14 +10,13 @@ const ButtonField = (props: any) => {
         <div>
             <button
                 id={props.id}
-                name={props.name}
                 className={props.rootClass}
-                type={props.type ?? 'button'}
-                placeholder={props.placeholder}
-                onClick={props.onClick}
-                disabled={props.disabled}
+                name={props.name}
                 autofocus={props.autofocus}
                 value={props.value}
+                type={props.type ?? 'button'}
+                onClick={props.onClick}
+                disabled={props.disabled}
                 {...props}
             >
                 {props.buttonText ?? 'Click'}
