@@ -4,17 +4,11 @@
  */
 
 import React from "react";
+
 const ButtonField = (props: any) => {
-
-    const TextAreaTheme = {
-        backgroundColor: '#4CAF50',
-        color: 'white'
-    }
-
     return (
         <div>
             <button
-                style={TextAreaTheme}
                 id={props.id}
                 name={props.name}
                 className={props.rootClass}
@@ -22,6 +16,8 @@ const ButtonField = (props: any) => {
                 placeholder={props.placeholder}
                 onClick={props.onClick}
                 disabled={props.disabled}
+                autofocus={props.autofocus}
+                value={props.value}
                 {...props}
             >
                 {props.buttonText ?? 'Click'}
