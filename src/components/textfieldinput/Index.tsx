@@ -1,19 +1,17 @@
 import React from 'react'
-import { filledTheme, outlinedTheme, standardTheme } from '../themes/Index'
+import { outlinedTheme } from '../themes/Index'
 
 const TextField = (props: any) => {
 
   const errorTheme = {
-    border: props.error ? '1px solid #ff0505' : '1px solid #000000',
+    borderColor: props.error ? '#ff0505' : '#000000'
   }
 
   return (
     <>
       <p className={props.lableClass}>{props.label}</p>
       <input
-        style={props.variant === 'standard' ? { ...standardTheme, ...errorTheme }
-          : props.variant === 'filled' ? { ...filledTheme, ...errorTheme }
-            : { ...outlinedTheme, ...errorTheme }}s
+        style={{ ...props.variant, ...errorTheme } ?? { ...outlinedTheme, ...errorTheme }}
         id={props.id}
         value={props.value}
         name={props.name}
