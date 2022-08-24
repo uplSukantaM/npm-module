@@ -31,7 +31,7 @@ const ButtonField = (props: any) => {
         <div>
             <button
                 style={
-                    props.variant === 'filled' ? filledTheme : props.variant === 'outlined' ? outlinedTheme : standardTheme}
+                    props.variant || standardTheme}
                 id={props.id}
                 className={props.rootClass}
                 name={props.name}
@@ -44,7 +44,6 @@ const ButtonField = (props: any) => {
             >
                 {props.buttonText ?? 'Click'}
             </button>
-            <p className={props.helperTextClass} style={{ color: 'red' }}>{props.helperText}</p>
         </div>
     );
 };
