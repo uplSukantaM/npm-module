@@ -1,21 +1,16 @@
 import React from 'react'
-import { filledTheme, outlinedTheme, standardTheme } from '../themes/Index'
-// import passwordshoweye from "./Image/passwordshoweye.svg"
-// import passwordhideeye from "./Image/passwordhideeye.svg"
 const PasswordField = (props: any) => {
 
   const errorTheme = {
-    border: props.error ? '1px solid #ff0505' : '1px solid #000000',
+    borderColor: props.error ? '#ff0505' : '#000000'
   }
 
   return (
     <>
-      <p className={props.lableClass}>{props.Label}</p>
+      <p className={props.lableClass}>{props.label}</p>
       <div style={{ position: 'relative', width: 'fit-content' }}>
         <input
-          style={props.variant === 'standard' ? { ...standardTheme, ...errorTheme }
-            : props.variant === 'filled' ? { ...filledTheme, ...errorTheme }
-              : { ...outlinedTheme, ...errorTheme }}
+          style={{ ...props.variant, ...errorTheme }}
           id={props.id}
           value={props.value}
           name={props.name}

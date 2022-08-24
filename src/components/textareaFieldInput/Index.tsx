@@ -3,20 +3,14 @@
  */
 
 import React from "react";
+import { TextArea } from "../themes/Index";
 const TextAreaField = (props: any) => {
-
-    const TextAreaTheme = {
-        display: 'block',
-        width: '30%',
-        height: '8rem',
-        resize: 'both',
-    }
 
     return (
         <div>
             <label className={`${props.lableClass}`}>{props.label}</label>
             <textarea
-                style={TextAreaTheme}
+                style={TextArea}
                 id={props.id}
                 value={props.value}
                 name={props.name}

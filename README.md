@@ -17,7 +17,7 @@ $ yarn add formfieldsui
 #### Import and example:-
 
 ```JavaScript
-import { EmailFieldInput, TextFieldInput, TextAreaFieldInput, PasswordFieldInput,ButtonFieldInput} from "formfieldsui";
+import { EmailFieldInput, TextFieldInput, TextAreaFieldInput, PasswordFieldInput, ButtonFieldInput} from "formfieldsui";
 
 <EmailFieldInput
 label='EmailLabel'
@@ -44,7 +44,7 @@ onChange={(e) =>  e.target.value}
 />
 
 <ButtonFieldInput
-onclick="alert('Hello world!')"
+onClick={() => alert('alert message')}
 buttonText="Click"
 />
 ```
@@ -69,7 +69,7 @@ buttonText="Click"
 | showImg        | string |                                                                         | It is used to pass show password eye icon image path                                                                                      |
 | hideImg        | string |                                                                         | It is used to pass hide password eye icon image path                                                                                      |
 | changeIconFunc | func   |                                                                         | handle showPassword state                                                                                                                 |
-| autofocus      | string |                                                                         | Specifies that a button should automatically get focus when the page loads                                                                |
+| autoFocus      | string |                                                                         | Specifies that a button should automatically get focus when the page loads                                                                |
 | buttonText     | string |                                                                         | button name                                                                                                                               |
 
 #### ClassName for Css:-
@@ -81,18 +81,28 @@ helperTextClass = for notification "error message"
 ```
 
 #### variant :-
-
-|     | Name                 |     |
+|     |Variant name for Input fields|     |
 | --- | -------------------- | --- |
-|     | outlined `(Default)` |     |
-|     | standard             |     |
-|     | filled               |     |
-
+|     | Outlined |     |
+|     | Standard   |     |
+|     | Filled     |     |
 ```JavaScript
 Ex:-
-<TextFieldInput  variant='filled' />
-<EmailFieldInput  variant='filled' />
-<TextAreaFieldInput />
-<PasswordFieldInput  variant='filled' />
-<ButtonFieldInput variant='outlined'/>
+import { Standard, Filled, Outlined  } from "formfieldsui";
+
+    <TextFieldInput  variant={Outlined} />
+    <EmailFieldInput  variant={Standard} />
+    <PasswordFieldInput  variant={Filled} />
+```
+
+||Variant name for Button||
+| --- | -------------------- | --- |
+|     | BtnOutlined |     |
+|     | BtnStandard |     |
+|     | BtnFilled |     |
+```JavaScript
+Ex:-
+import { BtnOutlined } from "formfieldsui";
+
+    <ButtonFieldInput variant={BtnOutlined}/>
 ```

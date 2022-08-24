@@ -3,13 +3,11 @@
  */
 
 import React from "react";
-import { filledTheme, outlinedTheme, standardTheme } from "../themes/Index";
-//import { EmailStartIcon } from "../emailFieldInput/image/svg_files";
 const EmailField = (props: any) => {
-    // const emailStartSvg = useState(EmailStartIcon);
+
 
     const errorTheme = {
-        border: props.error ? '1px solid #ff0505' : '1px solid #000000',
+        borderColor: props.error ? '#ff0505' : '#000000'
     }
 
     return (
@@ -17,9 +15,7 @@ const EmailField = (props: any) => {
             <label className={`${props.lableClass}`}>{props.label}</label>
             <form>
                 <input
-                    style={props.variant === 'standard' ? { ...standardTheme, ...errorTheme }
-                        : props.variant === 'filled' ? { ...filledTheme, ...errorTheme }
-                            : { ...outlinedTheme, ...errorTheme }}
+                    style={{ ...props.variant, ...errorTheme }}
                     id={props.id}
                     value={props.value}
                     name={props.name}
