@@ -34,4 +34,25 @@ const filledTheme = {
     borderTopRightRadius: '4px'
 }
 
-export { outlinedTheme, standardTheme, filledTheme }
+const BtnOutlined = {
+    border: '1px solid black',
+    color: ' black',
+    padding: '10px 10px 10px 10px',
+    textalign: 'center',
+    cursor: 'pointer'
+}
+const BtnFilled = {
+    border: 'none',
+    background: '#4CAF50',
+    color: ' white',
+    padding: '10px 10px 10px 10px',
+    textalign: 'center',
+    cursor: 'pointer'
+}
+const BtnStandard = {
+    border: 'none',
+    background: 'none',
+    cursor: 'pointer'
+}
+
+export { outlinedTheme, standardTheme, filledTheme, BtnOutlined, BtnFilled, BtnStandard }
