@@ -17,7 +17,7 @@ $ yarn add formfieldsui
 #### Import and example:-
 
 ```JavaScript
-import { EmailFieldInput, TextFieldInput, TextAreaFieldInput, PasswordFieldInput,ButtonFieldInput} from "formfieldsui";
+import { EmailFieldInput, TextFieldInput, TextAreaFieldInput, PasswordFieldInput, ButtonFieldInput} from "formfieldsui";
 
 <EmailFieldInput
 label='EmailLabel'
@@ -88,6 +88,8 @@ helperTextClass = for notification "error message"
 |     | Filled     |     |
 ```JavaScript
 Ex:-
+import { Standard, Filled, Outlined  } from "formfieldsui";
+
     <TextFieldInput  variant={Outlined} />
     <EmailFieldInput  variant={Standard} />
     <PasswordFieldInput  variant={Filled} />
@@ -100,5 +102,7 @@ Ex:-
 |     | BtnFilled |     |
 ```JavaScript
 Ex:-
-    <ButtonFieldInput variant='BtnOutlined'/>
+import { BtnOutlined } from "formfieldsui";
+
+    <ButtonFieldInput variant={BtnOutlined}/>
 ```
