@@ -3,7 +3,6 @@
  */
 
 import React from "react";
-import { outlinedTheme } from "../themes/Index";
 const EmailField = (props: any) => {
 
 
@@ -16,7 +15,7 @@ const EmailField = (props: any) => {
             <label className={`${props.lableClass}`}>{props.label}</label>
             <form>
                 <input
-                    style={{ ...props.variant, ...errorTheme } ?? { ...outlinedTheme, ...errorTheme }}
+                    style={{ ...props.variant, ...errorTheme }}
                     id={props.id}
                     value={props.value}
                     name={props.name}

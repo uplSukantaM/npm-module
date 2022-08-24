@@ -4,7 +4,7 @@ import TextField from './components/textfieldinput/Index';
 import TextAreaField from './components/textareaFieldInput/Index';
 import PasswordField from './components/passwordfieldinput'
 import ButtonField from './components/buttonFieldInput/Index';
-import { outlinedTheme, standardTheme, filledTheme, BtnOutlined, BtnFilled, BtnStandard } from './components/themes/Index'
+import { Outlined, Standard, Filled, BtnOutlined, BtnFilled, BtnStandard } from './components/themes/Index'
 
 const EmailFieldInput = (props: any): JSX.Element => {
 
@@ -40,4 +40,4 @@ const ButtonFieldInput = (props: any) => {
 	)
 }
 
-export { TextFieldInput, EmailFieldInput, TextAreaFieldInput, PasswordFieldInput, ButtonFieldInput,  outlinedTheme, standardTheme, filledTheme, BtnOutlined, BtnFilled, BtnStandard }
+export { TextFieldInput, EmailFieldInput, TextAreaFieldInput, PasswordFieldInput, ButtonFieldInput, Standard, Filled, BtnOutlined, BtnFilled, BtnStandard, Outlined }

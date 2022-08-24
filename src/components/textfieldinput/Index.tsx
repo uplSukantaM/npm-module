@@ -1,5 +1,4 @@
 import React from 'react'
-import { outlinedTheme } from '../themes/Index'
 
 const TextField = (props: any) => {
 
@@ -11,7 +10,7 @@ const TextField = (props: any) => {
     <>
       <p className={props.lableClass}>{props.label}</p>
       <input
-        style={{ ...props.variant, ...errorTheme } ?? { ...outlinedTheme, ...errorTheme }}
+        style={{ ...props.variant, ...errorTheme }}
         id={props.id}
         value={props.value}
         name={props.name}

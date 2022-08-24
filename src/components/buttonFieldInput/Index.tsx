@@ -14,7 +14,7 @@ const ButtonField = (props: any) => {
                 id={props.id}
                 className={props.rootClass}
                 name={props.name}
-                autofocus={props.autofocus}
+                autoFocus={props.autoFocus}
                 value={props.value}
                 type={props.type ?? 'button'}
                 onClick={props.onClick}

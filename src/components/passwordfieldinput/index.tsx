@@ -1,5 +1,4 @@
 import React from 'react'
-import { outlinedTheme } from '../themes/Index'
 const PasswordField = (props: any) => {
 
   const errorTheme = {
@@ -8,10 +7,10 @@ const PasswordField = (props: any) => {
 
   return (
     <>
-      <p className={props.lableClass}>{props.Label}</p>
+      <p className={props.lableClass}>{props.label}</p>
       <div style={{ position: 'relative', width: 'fit-content' }}>
         <input
-          style={{ ...props.variant, ...errorTheme } ?? { ...outlinedTheme, ...errorTheme }}
+          style={{ ...props.variant, ...errorTheme }}
           id={props.id}
           value={props.value}
           name={props.name}

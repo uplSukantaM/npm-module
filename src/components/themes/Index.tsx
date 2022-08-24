@@ -1,10 +1,11 @@
-const outlinedTheme = {
+const Outlined = {
     minHeight: '50px',
     minWidth: '200px',
-    outline: 'none'
+    outline: 'none',
+    border: "1px solid #000"
 }
 
-const standardTheme = {
+const Standard = {
     minHeight: '50px',
     minWidth: '200px',
     boxSizing: 'border-box',
@@ -18,7 +19,7 @@ const standardTheme = {
     transition: '0.5s'
 }
 
-const filledTheme = {
+const Filled = {
     minHeight: '50px',
     minWidth: '200px',
     boxSizing: 'border-box',
@@ -55,4 +56,12 @@ const BtnStandard = {
     cursor: 'pointer'
 }
 
-export { outlinedTheme, standardTheme, filledTheme, BtnOutlined, BtnFilled, BtnStandard }
+const TextArea = {
+    display: 'block',
+    width: '30%',
+    height: '8rem',
+    resize: 'both',
+}
+
+
+export { Outlined, Standard, Filled, BtnOutlined, BtnFilled, BtnStandard, TextArea }
